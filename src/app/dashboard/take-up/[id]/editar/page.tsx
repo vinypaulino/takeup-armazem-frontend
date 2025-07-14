@@ -44,7 +44,7 @@ async function EditTakeUpContent({ takeUpId }: { takeUpId: string }) {
 
 export default async function EditTakeUpPage({ params }: EditTakeUpPageProps) {
   return (
-    <DashboardLayout>
+    <DashboardLayout title="Editar Take-Up" subtitle="Modifique as informações do take-up e gerencie seus pacotes">
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center gap-4">
@@ -54,12 +54,6 @@ export default async function EditTakeUpPage({ params }: EditTakeUpPageProps) {
               Voltar para Take-Ups
             </Link>
           </Button>
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">Editar Take-Up</h1>
-            <p className="text-gray-600">
-              Modifique as informações do take-up e gerencie seus pacotes
-            </p>
-          </div>
         </div>
 
         {/* Content */}

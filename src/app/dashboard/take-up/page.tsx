@@ -250,15 +250,9 @@ export default async function TakeUpPage() {
     const takeUps = await getTakeUps()
 
     return (
-      <DashboardLayout>
-        <div className="flex-1 space-y-4 p-8 pt-6">
+      <DashboardLayout title="Take-Ups" subtitle="Gerencie os registros de take-up do armazém">
+        <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight">Take-Ups</h2>
-              <p className="text-muted-foreground">
-                Gerencie os registros de take-up do armazém
-              </p>
-            </div>
             <Button asChild>
               <Link href="/dashboard/take-up/novo">
                 <Plus className="mr-2 h-4 w-4" />
@@ -310,17 +304,8 @@ export default async function TakeUpPage() {
     // If backend is unavailable, this will redirect to error page
     // due to the error handling in the API utility
     return (
-      <DashboardLayout>
-        <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight">Take-Ups</h2>
-              <p className="text-muted-foreground">
-                Gerencie os registros de take-up do armazém
-              </p>
-            </div>
-          </div>
-
+      <DashboardLayout title="Take-Ups" subtitle="Gerencie os registros de take-up do armazém">
+        <div className="space-y-4">
           <Card>
             <CardContent className="p-6">
               <div className="text-center">
